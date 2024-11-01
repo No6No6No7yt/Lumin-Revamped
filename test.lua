@@ -10,7 +10,7 @@ function fr()
 end
 
 if fr() then
-    print("Yes.")
+    print("Yes.NIGGA")
 else
     print("No.")
 end
