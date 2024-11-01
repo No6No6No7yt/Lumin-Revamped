@@ -1,16 +1,16 @@
-function isCalledByLoadstring()
+function isCalledBySpecificLoadstring()
 
     local info = debug.getinfo(2, "S")
 
-    if info and info.what == "Lua" and info.source:find("loadstring") then
+    if info and info.source:find("lumin%-hub%.lol/test%.lua") then
         return true
     end
 
     return false
 end
 
-if isCalledByLoadstring() then
-    print("yes.")
+if isCalledBySpecificLoadstring() then
+    print("Yes.")
 else
-    print("no.")
+    print("No.")
 end
