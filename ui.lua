@@ -737,7 +737,7 @@ function Library:CreateWindow(hubname)
                     ImageButton.BorderSizePixel = 0
                     ImageButton.Position = UDim2.new(0, 242, 0, 2)
                     ImageButton.Size = UDim2.new(0, 20, 0, 20)
-                    ImageButton.Image = "rbxassetid://3926311105"
+                    ImageButton.Image = "rbxassetid://120756524156554"
                     ImageButton.ImageRectOffset = Vector2.new(940, 784)
                     ImageButton.ImageRectSize = Vector2.new(48, 48)
 
@@ -821,7 +821,7 @@ function Library:CreateWindow(hubname)
                     ImageButton.BorderSizePixel = 0
                     ImageButton.Position = UDim2.new(0, 242, 0, 1)
                     ImageButton.Size = UDim2.new(0, 21, 0, 22)
-                    ImageButton.Image = "rbxassetid://14834203285"
+                    ImageButton.Image = "rbxassetid://120756524156554"
 
                     if default then
                         for i,v in pairs(list) do
