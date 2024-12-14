@@ -60,7 +60,33 @@ function Library:CreateWindow(hubname)
     end;
 
     -- Instances:
+    local ScreenGui = Instance.new("ScreenGui")
+    local Body = Instance.new("Frame")
+    local Body_Corner = Instance.new("UICorner")
+    local Title_Hub = Instance.new("TextLabel")
+    local MInimize_Button = Instance.new("TextButton")
+    local Discord = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local Disc_Logo = Instance.new("ImageLabel")
+    local Disc_Title = Instance.new("TextLabel")
+    local Server_Time = Instance.new("TextLabel")
+    local Server_ID = Instance.new("TextLabel")
+    local List_Tile = Instance.new("Frame")
+    local Tile_Gradient = Instance.new("UIGradient")
+    local Toggle = Instance.new("Frame")
+    local toggle_corner = Instance.new("UICorner")
+    local toggle_Image = Instance.new("ImageButton")
 
+    -- Properties:
+    ScreenGui.Name = LibName
+    ScreenGui.Parent = game.CoreGui
+    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
+    game:GetService("UserInputService").InputBegan:connect(function(input) 
+        if input.KeyCode == Enum.KeyCode.LeftControl then
+            Library:ToggleUI()
+        end
+    end)
 
     Body.Name = "Body"
     Body.Parent = ScreenGui
