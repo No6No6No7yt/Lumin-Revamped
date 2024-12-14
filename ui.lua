@@ -24,7 +24,7 @@ end;
 
 local SettingToggle = {}
 
-local Name = "BTConfig.JSON"
+local Name = "LNConfig.JSON"
 
 pcall(function()
     if not pcall(function() readfile(Name) end) then
