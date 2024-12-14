@@ -90,7 +90,7 @@ function Library:CreateWindow(hubname)
 
     Body.Name = "Body"
     Body.Parent = ScreenGui
-    Body.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    Body.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
     Body.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Body.BorderSizePixel = 0
     Body.Position = UDim2.new(0.258427024, 0, 0.217948765, 0)
@@ -111,7 +111,7 @@ function Library:CreateWindow(hubname)
     Title_Hub.Size = UDim2.new(0, 558, 0, 30)
     Title_Hub.Font = Enum.Font.SourceSansBold
     Title_Hub.Text = hubname .. " - " .. GameName
-    Title_Hub.TextColor3 = Color3.fromRGB(128, 0, 128)
+    Title_Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
     Title_Hub.TextSize = 15.000
     Title_Hub.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -127,13 +127,13 @@ function Library:CreateWindow(hubname)
     MInimize_Button.AutoButtonColor = false
     MInimize_Button.Font = Enum.Font.SourceSans
     MInimize_Button.Text = "+"
-    MInimize_Button.TextColor3 = Color3.fromRGB(128, 0, 128)
+    MInimize_Button.TextColor3 = Color3.fromRGB(255, 255, 255)
     MInimize_Button.TextSize = 40.000
     MInimize_Button.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
     Discord.Name = "Discord"
     Discord.Parent = Body
-    Discord.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    Discord.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
     Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Discord.BorderSizePixel = 0
     Discord.Position = UDim2.new(0, 5, 0, 320)
@@ -167,7 +167,7 @@ function Library:CreateWindow(hubname)
     Disc_Title.Size = UDim2.new(0, 40, 0, 25)
     Disc_Title.Font = Enum.Font.SourceSansSemibold
     Disc_Title.Text = "Discord"
-    Disc_Title.TextColor3 = Color3.fromRGB(128, 0, 128)
+    Disc_Title.TextColor3 = Color3.fromRGB(255, 255, 255)
     Disc_Title.TextSize = 14.000
     Disc_Title.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -204,7 +204,7 @@ function Library:CreateWindow(hubname)
     Server_Time.Size = UDim2.new(0, 120, 0, 25)
     Server_Time.Font = Enum.Font.SourceSansSemibold
     Server_Time.Text = ""
-    Server_Time.TextColor3 = Color3.fromRGB(128, 0, 128)
+    Server_Time.TextColor3 = Color3.fromRGB(255, 255, 255)
     Server_Time.TextSize = 14.000
     Server_Time.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -238,7 +238,7 @@ function Library:CreateWindow(hubname)
     Server_ID.Size = UDim2.new(0, 365, 0, 25)
     Server_ID.Font = Enum.Font.SourceSansSemibold
     Server_ID.Text = "User : " .. NameID .. "     [CTRL = Hide Gui]";
-    Server_ID.TextColor3 = Color3.fromRGB(128, 0, 128)
+    Server_ID.TextColor3 = Color3.fromRGB(255, 255, 255)
     Server_ID.TextSize = 14.000
     Server_ID.TextXAlignment = Enum.TextXAlignment.Right
 
@@ -251,10 +251,10 @@ function Library:CreateWindow(hubname)
     List_Tile.Size = UDim2.new(1, 0, 0, 2)
 
     Tile_Gradient.Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
-        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(128, 0, 128)),
-        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(128, 0, 128)),
-        ColorSequenceKeypoint.new(1, Color3.fromRGB(50, 50, 50)),
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
+        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(0, 0, 255)),
+        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(0, 0, 255)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
     })
     Tile_Gradient.Name = "Tile_Gradient"
     Tile_Gradient.Parent = List_Tile
@@ -278,7 +278,7 @@ function Library:CreateWindow(hubname)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
     toggle_Image.Image = "http://www.roblox.com/asset/?id=12021503727"
-    toggle_Image.ImageColor3 = Color3.fromRGB(128, 0, 128)
+    toggle_Image.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
     local minimizetog = false
     MInimize_Button.MouseButton1Click:Connect(function()
@@ -363,7 +363,7 @@ function Library:CreateWindow(hubname)
     -- Properties:
     Tab_Container.Name = "Tab_Container"
     Tab_Container.Parent = Body
-    Tab_Container.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    Tab_Container.BackgroundColor3 = Color3.fromRGB(64, 64, 95)
     Tab_Container.BackgroundTransparency = 1.000
     Tab_Container.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Tab_Container.BorderSizePixel = 0
@@ -380,10 +380,10 @@ function Library:CreateWindow(hubname)
     Tab_List.Size = UDim2.new(1, 0, 0, 2)
 
     TabList_Gradient.Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
-        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(128, 0, 128)),
-        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(128, 0, 128)),
-        ColorSequenceKeypoint.new(1, Color3.fromRGB(50, 50, 50)),
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
+        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(0, 0, 255)),
+        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(0, 0, 255)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
     })
     TabList_Gradient.Name = "TabList_Gradient"
     TabList_Gradient.Parent = Tab_List
@@ -427,10 +427,10 @@ function Library:CreateWindow(hubname)
 
     local ContainerGradients = Instance.new("UIGradient")
     ContainerGradients.Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0, Color3.fromRGB(50, 50, 50)),
-        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(128, 0, 128)),
-        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(128, 0, 128)),
-        ColorSequenceKeypoint.new(1, Color3.fromRGB(50, 50, 50)),
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 100)),
+        ColorSequenceKeypoint.new(0.3, Color3.fromRGB(0, 0, 255)),
+        ColorSequenceKeypoint.new(0.7, Color3.fromRGB(0, 0, 255)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 100)),
     })
     ContainerGradients.Name = "ContainerGradients"
     ContainerGradients.Parent = Main_Container
@@ -451,7 +451,7 @@ function Library:CreateWindow(hubname)
         -- Properties:
         Tab_Items.Name = "Tab_Items"
         Tab_Items.Parent = Tab_Scroll
-        Tab_Items.BackgroundColor3 = Color3.fromRGB(128, 0, 128)
+        Tab_Items.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
         Tab_Items.BackgroundTransparency = 1.000
         Tab_Items.BorderColor3 = Color3.fromRGB(0, 0, 0)
         Tab_Items.BorderSizePixel = 0
