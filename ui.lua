@@ -441,11 +441,12 @@ function Library:CreateWindow(hubname)
 
     local Tabs = {}
     local is_first_tab = true
-    function Tabs:addTab(title_tab)
+    function Tabs:addTab(title_tab, gradient_colors)
 
         -- Instances:
         local Tab_Items = Instance.new("TextButton")
         local Tab_Item_Corner = Instance.new("UICorner")
+        local Tab_Gradient = Instance.new("UIGradient")
 
         -- Properties:
         Tab_Items.Name = "Tab_Items"
@@ -464,6 +465,11 @@ function Library:CreateWindow(hubname)
         Tab_Item_Corner.Name = "Tab_Item_Corner"
         Tab_Item_Corner.CornerRadius = UDim.new(0, 4)
         Tab_Item_Corner.Parent = Tab_Items
+
+        if gradient_colors then
+            Tab_Gradient.Color = ColorSequence.new(gradient_colors)
+            Tab_Gradient.Parent = Tab_Items
+        end
 
         utility:Tween(Tab_Items, {Size = UDim2.new(0, 25 + Tab_Items.TextBounds.X, 0, 24)}, .15)
 
