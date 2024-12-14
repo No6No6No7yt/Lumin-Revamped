@@ -712,7 +712,7 @@ function Library:CreateWindow(hubname)
 
                     -- Properties:
                     Frame.Parent = Section_Inner
-                    Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                    Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
                     Frame.BorderSizePixel = 0
                     Frame.Size = UDim2.new(1, -10, 0, 25)
@@ -725,7 +725,7 @@ function Library:CreateWindow(hubname)
                     TextLabel.Position = UDim2.new(0, 5, 0, 0)
                     TextLabel.Size = UDim2.new(1, -30, 0, 25)
                     TextLabel.Font = Enum.Font.SourceSansSemibold
-                    TextLabel.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextLabel.TextSize = 12.000
                     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
                     TextLabel.Text = toggle_title
@@ -740,7 +740,6 @@ function Library:CreateWindow(hubname)
                     ImageButton.Image = "rbxassetid://3926311105"
                     ImageButton.ImageRectOffset = Vector2.new(940, 784)
                     ImageButton.ImageRectSize = Vector2.new(48, 48)
-                    ImageButton.ImageColor3 = Color3.fromRGB(128, 0, 128)
 
                     UICorner.CornerRadius = UDim.new(0, 4)
                     UICorner.Parent = Frame
@@ -763,7 +762,7 @@ function Library:CreateWindow(hubname)
                     ImageButton.MouseLeave:Connect(function ()
                         utility:Tween(TextLabel, {TextTransparency = 0}, .15)
                         utility:Tween(ImageButton, {ImageTransparency = 0}, .15)
-                        utility:Tween(Frame, {BackgroundColor3 = Color3.fromRGB(50, 50, 50)}, .15);
+                        utility:Tween(Frame, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}, .15);
                     end);
 
                     ImageButton.MouseButton1Click:Connect(function ()
@@ -794,7 +793,7 @@ function Library:CreateWindow(hubname)
 
                     -- Properties:
                     Frame.Parent = Section_Inner
-                    Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                    Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
                     Frame.BorderSizePixel = 0
                     Frame.Size = UDim2.new(1, -10, 0, 25)
@@ -810,7 +809,7 @@ function Library:CreateWindow(hubname)
                     TextLabel.Position = UDim2.new(0, 5, 0, 0)
                     TextLabel.Size = UDim2.new(1, -40, 0, 25)
                     TextLabel.Font = Enum.Font.SourceSansSemibold
-                    TextLabel.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextLabel.TextSize = 12.000
                     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
                     TextLabel.Text = dropdown_tile
@@ -823,7 +822,6 @@ function Library:CreateWindow(hubname)
                     ImageButton.Position = UDim2.new(0, 242, 0, 1)
                     ImageButton.Size = UDim2.new(0, 21, 0, 22)
                     ImageButton.Image = "rbxassetid://14834203285"
-                    ImageButton.ImageColor3 = Color3.fromRGB(128, 0, 128)
 
                     if default then
                         for i,v in pairs(list) do
@@ -843,7 +841,7 @@ function Library:CreateWindow(hubname)
                     ImageButton.MouseLeave:Connect(function ()
                         utility:Tween(TextLabel, {TextTransparency = 0}, .15)
                         utility:Tween(ImageButton, {ImageTransparency = 0}, .15)
-                        utility:Tween(Frame, {BackgroundColor3 = Color3.fromRGB(50, 50, 50)}, .15);
+                        utility:Tween(Frame, {BackgroundColor3 = Color3.fromRGB(40, 40, 40)}, .15);
                     end);
 
                     -- Instances:
@@ -854,7 +852,7 @@ function Library:CreateWindow(hubname)
                     -- Properties:
                     ScrollDown.Name = "ScrollDown"
                     ScrollDown.Parent = Section_Inner
-                    ScrollDown.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                    ScrollDown.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     ScrollDown.BorderColor3 = Color3.fromRGB(0, 0, 0)
                     ScrollDown.BorderSizePixel = 0
                     ScrollDown.ClipsDescendants = true
@@ -886,7 +884,7 @@ function Library:CreateWindow(hubname)
                         local TextButton = Instance.new('TextButton')
 
                         TextButton.Parent = ScrollDown
-                        TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                        TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                         TextButton.BackgroundTransparency = 1.000
                         TextButton.BorderSizePixel = 0
                         TextButton.Size = UDim2.new(1, 0, 0, 25)
@@ -895,7 +893,7 @@ function Library:CreateWindow(hubname)
                         TextButton.AutoButtonColor = false
                         TextButton.TextSize = 12.000
                         TextButton.Text = v
-                        TextButton.TextColor3 = Color3.fromRGB(128, 0, 128)
+                        TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     
                         TextButton.MouseEnter:Connect(function()
                             utility:Tween(TextButton, {TextSize = 9.000}, 0.15)
@@ -904,7 +902,7 @@ function Library:CreateWindow(hubname)
     
                         TextButton.MouseLeave:Connect(function()
                             utility:Tween(TextButton, {TextSize = 12.000}, 0.15)
-                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(128, 0, 128)}, 0.15)
+                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 0.15)
                         end)
     
                         TextButton.MouseButton1Click:Connect(function()
@@ -913,7 +911,7 @@ function Library:CreateWindow(hubname)
                             callback(v)
                             utility:Tween(ScrollDown, {Size = UDim2.new(1, -10, 0, 0)}, 0.15)
                             utility:Tween(ImageButton, {ImageColor3 = Color3.fromRGB(255, 255, 255)}, .15)
-                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(128, 0, 128)}, .15)
+                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 255, 255)}, .15)
                         end)
                     end
 
@@ -937,7 +935,7 @@ function Library:CreateWindow(hubname)
                             local TextButton = Instance.new('TextButton')
     
                             TextButton.Parent = ScrollDown
-                            TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                            TextButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                             TextButton.BackgroundTransparency = 1.000
                             TextButton.BorderSizePixel = 0
                             TextButton.Size = UDim2.new(1, 0, 0, 25)
@@ -946,7 +944,7 @@ function Library:CreateWindow(hubname)
                             TextButton.AutoButtonColor = false
                             TextButton.TextSize = 12.000
                             TextButton.Text = v
-                            TextButton.TextColor3 = Color3.fromRGB(128, 0, 128)
+                            TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
         
                             TextButton.MouseEnter:Connect(function()
                                 utility:Tween(TextButton, {TextSize = 9.000}, 0.15)
@@ -955,7 +953,7 @@ function Library:CreateWindow(hubname)
         
                             TextButton.MouseLeave:Connect(function()
                                 utility:Tween(TextButton, {TextSize = 12.000}, 0.15)
-                                utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(128, 0, 128)}, 0.15)
+                                utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 0.15)
                             end)
         
                             TextButton.MouseButton1Click:Connect(function()
@@ -964,7 +962,7 @@ function Library:CreateWindow(hubname)
                                 callback(v)
                                 utility:Tween(ScrollDown, {Size = UDim2.new(1, -10, 0, 0)}, 0.15)
                                 utility:Tween(ImageButton, {ImageColor3 = Color3.fromRGB(255, 255, 255)}, .15)
-                                utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(128, 0, 128)}, .15)
+                                utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 255, 255)}, .15)
                             end)
                         end
                     end
@@ -983,7 +981,7 @@ function Library:CreateWindow(hubname)
 
                     -- Properties:
                     Frame.Parent = Section_Inner
-                    Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                    Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
                     Frame.BorderSizePixel = 0
                     Frame.Size = UDim2.new(1, -10, 0, 25)
@@ -999,7 +997,7 @@ function Library:CreateWindow(hubname)
                     TextLabel.Position = UDim2.new(0, 5, 0, 0)
                     TextLabel.Size = UDim2.new(0, 150, 0, 25)
                     TextLabel.Font = Enum.Font.SourceSansSemibold
-                    TextLabel.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextLabel.TextSize = 12.000
                     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
                     TextLabel.Text = text_tile
@@ -1011,7 +1009,7 @@ function Library:CreateWindow(hubname)
                     TextBox.Position = UDim2.new(0, 190, 0, 2)
                     TextBox.Size = UDim2.new(0, 70, 0, 20)
                     TextBox.Font = Enum.Font.SourceSansSemibold
-                    TextBox.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextBox.TextSize = 12.000
                     TextBox.Text = default or "Type Here"
 
@@ -1021,8 +1019,8 @@ function Library:CreateWindow(hubname)
                             utility:Tween(TextBox, {TextColor3 = Color3.fromRGB(0, 255, 0)}, .1);
                             utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(0, 255, 0)}, .1);
                             wait(.1);
-                            utility:Tween(TextBox, {TextColor3 = Color3.fromRGB(128, 0, 128)}, .5);
-                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(128, 0, 128)}, .5);
+                            utility:Tween(TextBox, {TextColor3 = Color3.fromRGB(255, 255, 255)}, .5);
+                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 255, 255)}, .5);
                         end;
                     end;
                     TextBox.FocusLost:Connect(onFocusLost);
@@ -1041,7 +1039,7 @@ function Library:CreateWindow(hubname)
 
                     -- Properties:
                     Frame.Parent = Section_Inner
-                    Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                    Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
                     Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
                     Frame.BorderSizePixel = 0
                     Frame.Size = UDim2.new(1, -10, 0, 25)
@@ -1057,20 +1055,20 @@ function Library:CreateWindow(hubname)
                     TextLabel.Position = UDim2.new(0, 5, 0, 0)
                     TextLabel.Size = UDim2.new(0, 150, 0, 25)
                     TextLabel.Font = Enum.Font.SourceSansSemibold
-                    TextLabel.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextLabel.TextSize = 12.000
                     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
                     TextLabel.Text = keybind_tile
 
                     TextButton.Parent = Frame
-                    TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+                    TextButton.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
                     TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
                     TextButton.BorderSizePixel = 0
                     TextButton.Position = UDim2.new(0, 190, 0, 3)
                     TextButton.Size = UDim2.new(0, 70, 0, 20)
                     TextButton.AutoButtonColor = false
                     TextButton.Font = Enum.Font.SourceSansSemibold
-                    TextButton.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextButton.TextSize = 14.000
                     TextButton.Text = preset.Name
 
@@ -1087,8 +1085,8 @@ function Library:CreateWindow(hubname)
                             utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(0, 255, 0)}, .1);
                             utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(0, 255, 0)}, .1);
                             wait(.1);
-                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(128, 0, 128)}, 1);
-                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(128, 0, 128)}, 1);
+                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 1);
+                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 1);
                         else
                             TextButton.Text = "Invald...";
                             Key = inputwait.KeyCode.Name;
@@ -1096,8 +1094,8 @@ function Library:CreateWindow(hubname)
                             utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 0, 0)}, .1);
                             utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 0, 0)}, .1);
                             wait(.1);
-                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(128, 0, 128)}, 1);
-                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(128, 0, 128)}, 1);
+                            utility:Tween(TextButton, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 1);
+                            utility:Tween(TextLabel, {TextColor3 = Color3.fromRGB(255, 255, 255)}, 1);
                         end;
                     end)
                 end
@@ -1115,7 +1113,7 @@ function Library:CreateWindow(hubname)
                     TextLabel.BorderSizePixel = 0
                     TextLabel.Size = UDim2.new(1, -20, 0, 15)
                     TextLabel.Font = Enum.Font.SourceSansSemibold
-                    TextLabel.TextColor3 = Color3.fromRGB(128, 0, 128)
+                    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
                     TextLabel.TextSize = 12.000
                     TextLabel.TextXAlignment = Enum.TextXAlignment.Left
                     TextLabel.Text = label_text
