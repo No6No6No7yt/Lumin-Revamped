@@ -695,6 +695,7 @@ function Library:CreateWindow(hubname)
                     end)
 
                     TextButton.MouseButton1Click:Connect(function()
+                        print(button_tile .. " button clicked")
                         callback()
                     end)
                 end
