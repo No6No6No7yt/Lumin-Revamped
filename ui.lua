@@ -83,7 +83,7 @@ function Library:CreateWindow(hubname)
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
     game:GetService("UserInputService").InputBegan:connect(function(input) 
-        if input.KeyCode == Enum.KeyCode.RightShift then
+        if input.KeyCode == Enum.KeyCode.LeftControl then
             Library:ToggleUI()
         end
     end)
@@ -237,7 +237,7 @@ function Library:CreateWindow(hubname)
     Server_ID.Position = UDim2.new(0, 230, 0, 320)
     Server_ID.Size = UDim2.new(0, 365, 0, 25)
     Server_ID.Font = Enum.Font.SourceSansSemibold
-    Server_ID.Text = "User : " .. NameID .. "     [Right Shift = Hide Gui]";
+    Server_ID.Text = "User : " .. NameID .. "     [CTRL = Hide Gui]";
     Server_ID.TextColor3 = Color3.fromRGB(255, 255, 255)
     Server_ID.TextSize = 14.000
     Server_ID.TextXAlignment = Enum.TextXAlignment.Right
@@ -277,7 +277,7 @@ function Library:CreateWindow(hubname)
     toggle_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
     toggle_Image.BorderSizePixel = 0
     toggle_Image.Size = UDim2.new(0, 40, 0, 40)
-    toggle_Image.Image = "http://www.roblox.com/asset/?id=12021503727"
+    toggle_Image.Image = "http://www.roblox.com/asset/?id=120756524156554"
     toggle_Image.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
     local minimizetog = false
@@ -695,6 +695,7 @@ function Library:CreateWindow(hubname)
                     end)
 
                     TextButton.MouseButton1Click:Connect(function()
+                        print(button_tile .. " button clicked")
                         callback()
                     end)
                 end
