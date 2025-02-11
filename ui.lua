@@ -23,6 +23,7 @@ local Themes = {
 		"Sakura",
 		"Lavender",
 		"Mint",
+		"Solar",
 		"Astronomical"
 	},
 	Dark = {
