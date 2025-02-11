@@ -24,6 +24,7 @@ local Themes = {
 		"Lavender",
 		"Mint",
 		"Solar",
+		"Midnight",
 		"Astronomical"
 	},
 	Dark = {
@@ -71,6 +72,53 @@ local Themes = {
 		Text = Color3.fromRGB(240, 240, 240),
 		SubText = Color3.fromRGB(170, 170, 170),
 		Hover = Color3.fromRGB(120, 120, 120),
+		HoverChange = 0.07,
+	},
+	Midnight = {
+		Name = "Midnight",
+		Accent = Color3.fromRGB(0, 50, 100),  -- A deep blue accent
+	
+		AcrylicMain = Color3.fromRGB(10, 10, 30),
+		AcrylicBorder = Color3.fromRGB(25, 25, 50),
+		AcrylicGradient = ColorSequence.new(Color3.fromRGB(15, 15, 40), Color3.fromRGB(15, 15, 40)),
+		AcrylicNoise = 0.85,
+	
+		TitleBarLine = Color3.fromRGB(50, 50, 80),
+		Tab = Color3.fromRGB(40, 40, 70),
+	
+		Element = Color3.fromRGB(20, 20, 40),
+		ElementBorder = Color3.fromRGB(10, 10, 25),
+		InElementBorder = Color3.fromRGB(30, 30, 60),
+		ElementTransparency = 0.90,
+	
+		ToggleSlider = Color3.fromRGB(40, 40, 70),
+		ToggleToggled = Color3.fromRGB(0, 0, 0),
+	
+		SliderRail = Color3.fromRGB(40, 40, 70),
+	
+		DropdownFrame = Color3.fromRGB(30, 30, 50),
+		DropdownHolder = Color3.fromRGB(20, 20, 40),
+		DropdownBorder = Color3.fromRGB(10, 10, 30),
+		DropdownOption = Color3.fromRGB(40, 40, 70),
+	
+		Keybind = Color3.fromRGB(40, 40, 70),
+	
+		Input = Color3.fromRGB(20, 20, 40),
+		InputFocused = Color3.fromRGB(30, 30, 60),
+		InputIndicator = Color3.fromRGB(40, 40, 70),
+	
+		Dialog = Color3.fromRGB(15, 15, 35),
+		DialogHolder = Color3.fromRGB(10, 10, 30),
+		DialogHolderLine = Color3.fromRGB(5, 5, 20),
+		DialogButton = Color3.fromRGB(15, 15, 35),
+		DialogButtonBorder = Color3.fromRGB(25, 25, 50),
+		DialogBorder = Color3.fromRGB(20, 20, 40),
+		DialogInput = Color3.fromRGB(10, 10, 30),
+		DialogInputLine = Color3.fromRGB(40, 40, 70),
+	
+		Text = Color3.fromRGB(240, 240, 240),  -- white text
+		SubText = Color3.fromRGB(200, 200, 200),
+		Hover = Color3.fromRGB(60, 60, 90),
 		HoverChange = 0.07,
 	},
 	Darker = {
