@@ -43,4 +43,4 @@ local inviteLink = "https://discord.com/invite/CaUVkK2YuV"
 joinServer(inviteLink)
 
 
- loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8afd136380b3b77b1f64d6b464a2a82f.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/666b9548b0e322722491428b44de9541.lua"))()
